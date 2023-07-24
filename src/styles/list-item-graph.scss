@@ -1,0 +1,34 @@
+@import "varibles";
+@import "mixins";
+@import "home";
+
+.accordions-content {
+  padding-top: 20px;
+}
+
+.list-item__filter {
+  @include button;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.active.list-item__filter {
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordions-content__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .accordions-content__square {
+    width: 15px;
+    height: 15px;
+  }
+}

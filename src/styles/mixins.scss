@@ -1,0 +1,13 @@
+@mixin displayFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: $colorGreen;
+  color: $colorWhite;
+}

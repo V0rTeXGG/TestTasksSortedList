@@ -1,0 +1,57 @@
+@import "mixins";
+@import "varibles";
+
+//reset style start
+
+*, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+//reset style end
+
+body {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $fontInter;
+  font-size: 18px;
+  line-height: 0;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: $colorBlack;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
